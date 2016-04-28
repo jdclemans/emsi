@@ -1,56 +1,33 @@
-//Bourbon Neat
-@import "../bourbon/bourbon.scss";
-@import "../neat/neat.scss";
+Scratch
 
-//Body Styles
-* {
-  background-color: white;
-}
-
-html {
-  width: 100%;
-}
-
-@font-face {
-   font-family: 'sailec';
-   src: url('fonts/sailec.otf') format('.otf');
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+	      <img src="images/Emsi-Logo-2016.png" alt="Logo Image">
 
 
-// NAVBAR
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $dark-gray: #333 !default;
   $large-screen: 53.75em !default;
-  $navigation-padding: 1em;
+  $navigation-padding: 2em;
   $navigation-background: white;
   $navigation-color: #074d77;
   $navigation-color-hover: black;
-  $navigation-height: 60px;
+  $navigation-height: 6em;
   $navigation-nav-button-background: $action-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
   $navigation-nav-button-border: 1px solid lighten($navigation-nav-button-background, 20%);
-  $navigation-search-background: lighten($navigation-background, 5);
-  $navigation-search-border: 1px solid darken($navigation-background, 5);
   $navigation-active-link-color: transparentize(white, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 17em;
   $horizontal-bar-mode: $large-screen;
-  $refills-max-width: 68em;
-  $jc-nav-padding: 3.5em;
 
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  font-family: 'sailec';
 
   .navigation-wrapper {
     @include clearfix;
@@ -66,8 +43,9 @@ header.navigation {
     padding-right: 2em;
 
     img {
-      max-height: $navigation-height;
+      max-height: 3.5em;
       padding: 0.8em 0;
+      margin-top: 20px;
     }
   }
 
@@ -79,7 +57,7 @@ header.navigation {
     float: right;
     line-height: $navigation-height;
     margin: 0;
-    padding-right: 1em;
+    padding-right: 6em;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -96,7 +74,7 @@ header.navigation {
   // Nav menu
 
   nav {
-    float: none;
+    float: center;
     min-height: $navigation-height;
     z-index: 9999999;
 
@@ -113,8 +91,7 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999;
-    font-size: 12px;
-
+    font-size: 11px;
 
     &.show {
       display: block;
@@ -134,11 +111,13 @@ header.navigation {
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
-    padding-right: $jc-nav-padding;
+    padding-right: 3.5em;
     text-align: right;
     width: 100%;
     z-index: 9999;
     text-transform: uppercase;
+    padding-top: 70px;
+
 
     @include media ($horizontal-bar-mode) {
       background: transparent;
@@ -169,46 +148,45 @@ header.navigation {
     padding-bottom: 3px;
   }
 
-  // Sub menus
+
+// Sub menus
 
   li.more.nav-link {
-    padding-right: $jc-nav-padding;
-;
+    padding-right: 3.5em;
 
     @include media($horizontal-bar-mode) {
-      padding-right: $jc-nav-padding;
+      padding-right: $navigation-submenu-padding;
     }
 
     > ul > li:first-child a  {
       padding-top: 1em;
     }
 
-    // a {
-    //   margin-right: $navigation-submenu-padding;
-    // }
+    a {
+      margin-right: $navigation-submenu-padding;
+    }
 
-// LITTLE ARROW INDICATOR    
-    // > a {
-    //   padding-right: 0.6em;
-    // }
+    > a {
+      padding-right: 0.6em;
+    }
 
-    // > a::after {
-    //   @include position(absolute, auto -0.4em auto auto);
-    //   color: $navigation-color;
-    //   content: "\25BE";
-    // }
+    > a::after {
+      @include position(absolute, auto -0.4em auto auto);
+      color: $navigation-color;
+      content: "\25BE";
+    }
   }
 
   li.more {
     overflow: visible;
     padding-right: 0;
 
-    // a {
-    //   padding-right: 0.8em;
-    // }
+    a {
+      padding-right: 0.8em;
+    }
 
     > a {
-      // padding-right: 1.6em;
+      padding-right: 1.6em;
       position: relative;
 
       @include media($horizontal-bar-mode) {
@@ -299,139 +277,76 @@ header.navigation {
     }
   }
 
-  // Elements on the far right
-
-  .navigation-tools {
-    background: #505050;
-    clear: both;
-    display: block;
-    height: $navigation-height;
-
-    @include media($horizontal-bar-mode) {
-      background: transparent;
-      clear: none;
-      float: right;
-    }
-  }
-
-  // Search bar
-
-  .search-bar {
-    $search-bar-border-color: $base-border-color;
-    $search-bar-border: 1px solid $search-bar-border-color;
-    $search-bar-background: lighten($search-bar-border-color, 10%);
-
-    float: left;
-    padding: 0.85em 0.85em 0.7em 0.6em;
-    width: 60%;
-
-    form {
-      position: relative;
-
-      input[type=search] {
-        background: $navigation-search-background;
-        border: $navigation-search-border;
-        border-radius: $base-border-radius * 2;
-        box-sizing: border-box;
-        color: $navigation-color;
-        font-size: 0.9em;
-        font-style: italic;
-        margin: 0;
-        padding: 0.5em 0.8em;
-        width: 100%;
-
-        @include media($horizontal-bar-mode) {
-          width: 100%;
-        }
-      }
-
-      button[type=submit] {
-        background: $navigation-search-background;
-        border: 0;
-        bottom: 0.3em;
-        left: auto;
-        outline: none;
-        padding: 0 9px;
-        position: absolute;
-        right: 0.3em;
-        top: 0.3em;
-
-        img {
-          height: 12px;
-          opacity: 0.7;
-          padding: 1px;
-        }
-      }
-    }
-
-    @include media($horizontal-bar-mode) {
-      display: inline-block;
-      position: relative;
-      width: 16em;
-
-      input {
-        box-sizing: border-box;
-        display: block;
-      }
-    }
-  }
-}
+//   width: 60px;
+//   height: 45px;
+//   position: relative;
+//   margin: 50px auto;
+//   -webkit-transform: rotate(0deg);
+//   -moz-transform: rotate(0deg);
+//   -o-transform: rotate(0deg);
+//   transform: rotate(0deg);
+//   -webkit-transition: .5s ease-in-out;
+//   -moz-transition: .5s ease-in-out;
+//   -o-transition: .5s ease-in-out;
+//   transition: .5s ease-in-out;
+//   cursor: pointer;
 
 
-//JC Styles
-.jc-nav {
-  padding-right: 3.5em;
-}
+// .navigation-menu-button span {
+//   display: block;
+//   position: absolute;
+//   height: 9px;
+//   width: 100%;
+//   background: black;
+//   border-radius: 9px;
+//   opacity: 1;
+//   left: 0;
+//   -webkit-transform: rotate(0deg);
+//   -moz-transform: rotate(0deg);
+//   -o-transform: rotate(0deg);
+//   transform: rotate(0deg);
+//   -webkit-transition: .25s ease-in-out;
+//   -moz-transition: .25s ease-in-out;
+//   -o-transition: .25s ease-in-out;
+//   transition: .25s ease-in-out;
+// }
 
+//   /* Icon 3 */
 
-// Hero Section
-.hero {
-  height: 20em;
-  background-color: grey;
-}
+//   .navigation-menu-button span:nth-child(1) {
+//     top: 0px;
+//   }
 
-// Ethos Section
-.ethos {
-  @include outer-container;
-  @include row(table);
-  @include shift(2);
-  height: 20em;  
-}
+//   .navigation-menu-button span:nth-child(2),  .navigation-menu-button span:nth-child(3) {
+//     top: 18px;
+//   }
 
-.ethos .colleges {
-  background-color: white;
-  height: 20em;
-  @include span-columns(2);
-  @include shift(2);
-  @include pad();
-}
+//   .navigation-menu-button span:nth-child(4) {
+//     top: 36px;
+//   }
 
-.ethos .years {
-  background-color: white;
-  height: 20em;
-  @include span-columns(2);
-  @include pad();
+//   .navigation-menu-button.open span:nth-child(1) {
+//     top: 18px;
+//     width: 0%;
+//     left: 50%;
+//   }
 
-}
+//   .navigation-menu-button span:nth-child(2) {
+//     -webkit-transform: rotate(45deg);
+//     -moz-transform: rotate(45deg);
+//     -o-transform: rotate(45deg);
+//     transform: rotate(45deg);
+//   }
 
-.ethos .students {
-  background-color: white;
-  height: 20em;
-  @include span-columns(2);
-  @include pad();
+//   .navigation-menu-button.open span:nth-child(3) {
+//     -webkit-transform: rotate(-45deg);
+//     -moz-transform: rotate(-45deg);
+//     -o-transform: rotate(-45deg);
+//     transform: rotate(-45deg);
+//   }
 
-}
-
-.ethos .aspen {
-  background-color: white;
-  height: 20em;
-  @include span-columns(2);
-  @include pad();
-
-}
-
-.keyline-right {
-    border-right: 1px solid rgba(0,0,0,0.10);
-}
-
-
+//   .navigation-menu-button.open span:nth-child(4) {
+//     top: 18px;
+//     width: 0%;
+//     left: 50%;
+//   }
