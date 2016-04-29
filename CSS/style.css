@@ -8,7 +8,14 @@ html {
   background-color: white; }
 
 html {
-  width: 100%; }
+  background: url(../images/Home-Hero-Image.jpg) no-repeat top left fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  min-height: 100%; }
 
 @font-face {
   font-family: 'sailec';
@@ -19,7 +26,6 @@ body {
 
 header.navigation {
   background-color: white;
-  border-bottom: 1px solid #e6e6e6;
   min-height: 60px;
   width: 100%;
   z-index: 999; }
@@ -33,7 +39,7 @@ header.navigation {
   header.navigation .logo {
     float: left;
     max-height: 60px;
-    padding-left: 1em;
+    padding-left: 5em;
     padding-right: 2em; }
     header.navigation .logo img {
       max-height: 60px;
@@ -44,10 +50,10 @@ header.navigation {
     float: right;
     line-height: 60px;
     margin: 0;
-    padding-right: 1em;
+    padding-right: 5em;
     text-decoration: none;
     text-transform: uppercase; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation .navigation-menu-button {
         display: none; } }
     header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
@@ -55,10 +61,15 @@ header.navigation {
   header.navigation nav {
     float: none;
     min-height: 60px;
-    z-index: 9999999; }
-    @media screen and (min-width: 53.75em) {
+    z-index: 9999999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media screen and (min-width: 900px) {
       header.navigation nav {
-        float: right; } }
+        float: right;
+        padding-right: 2em; } }
   header.navigation ul.navigation-menu {
     clear: both;
     display: none;
@@ -70,7 +81,7 @@ header.navigation {
     font-size: 12px; }
     header.navigation ul.navigation-menu.show {
       display: block; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation ul.navigation-menu {
         display: inline;
         margin: 0;
@@ -80,25 +91,27 @@ header.navigation {
     display: block;
     line-height: 60px;
     overflow: hidden;
-    padding-right: 3.5em;
+    padding-right: 4.7em;
     text-align: right;
-    width: 100%;
+    width: 60%;
     z-index: 9999;
-    text-transform: uppercase; }
-    @media screen and (min-width: 53.75em) {
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    @media screen and (min-width: 900px) {
       header.navigation ul li.nav-link {
         background: transparent;
         display: inline;
         line-height: 60px;
         text-decoration: none;
-        width: auto; } }
+        width: auto;
+        overflow: hidden; } }
     header.navigation ul li.nav-link a {
       color: #074d77;
       display: inline-block;
       text-decoration: none; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 900px) {
         header.navigation ul li.nav-link a {
-          padding-right: 1em; } }
+          padding-right: 0em; } }
       header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
         color: black; }
   header.navigation .active-nav-item a {
@@ -106,9 +119,9 @@ header.navigation {
     padding-bottom: 3px; }
   header.navigation li.more.nav-link {
     padding-right: 3.5em; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation li.more.nav-link {
-        padding-right: 3.5em; } }
+        padding-right: 4.7em; } }
     header.navigation li.more.nav-link > ul > li:first-child a {
       padding-top: 1em; }
   header.navigation li.more {
@@ -116,43 +129,40 @@ header.navigation {
     padding-right: 0; }
     header.navigation li.more > a {
       position: relative; }
-      @media screen and (min-width: 53.75em) {
-        header.navigation li.more > a {
-          margin-right: 1em; } }
       header.navigation li.more > a::after {
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
     header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
       display: block; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation li.more {
         padding-right: 0.8em;
         position: relative; } }
   header.navigation ul.submenu {
     display: none;
     padding-left: 0; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation ul.submenu {
         left: -1em;
         position: absolute;
         top: 1.5em; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation ul.submenu .submenu.fly-out-right {
-        left: 16.8em;
+        left: 19.8em;
         top: 0; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation ul.submenu .submenu.fly-out-left {
-        left: -16.8em;
+        left: -19.8em;
         top: 0; } }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation ul.submenu .submenu {
-        left: 16.8em;
+        left: 19.8em;
         top: 0; } }
     header.navigation ul.submenu li {
       display: block;
       padding-right: 0; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 900px) {
         header.navigation ul.submenu li {
           line-height: 46.15385px; }
           header.navigation ul.submenu li:first-child > a {
@@ -167,18 +177,18 @@ header.navigation {
         display: inline-block;
         text-align: right;
         width: 100%; }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 900px) {
           header.navigation ul.submenu li a {
             background-color: white;
             padding-left: 1em;
             text-align: left;
-            width: 17em; } }
+            width: 20em; } }
   header.navigation .navigation-tools {
     background: #505050;
     clear: both;
     display: block;
     height: 60px; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation .navigation-tools {
         background: transparent;
         clear: none;
@@ -200,7 +210,7 @@ header.navigation {
         margin: 0;
         padding: 0.5em 0.8em;
         width: 100%; }
-        @media screen and (min-width: 53.75em) {
+        @media screen and (min-width: 900px) {
           header.navigation .search-bar form input[type=search] {
             width: 100%; } }
       header.navigation .search-bar form button[type=submit] {
@@ -217,7 +227,7 @@ header.navigation {
           height: 12px;
           opacity: 0.7;
           padding: 1px; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 900px) {
       header.navigation .search-bar {
         display: inline-block;
         position: relative;
@@ -226,57 +236,35 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
+.jc-spacer {
+  width: 100%;
+  height: 1.2em; }
+
 .jc-nav {
   padding-right: 3.5em; }
 
-.hero {
-  height: 20em;
-  background-color: grey; }
+li.nav-link.jc-li-border {
+  color: #5b5aec;
+  border: 2px solid #5b5aec;
+  padding: 12px;
+  box-sizing: border-box;
+  /* add this */
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Older Webkit browsers */ }
 
-.ethos {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: table;
+.wrapper {
+  margin: 0 auto;
+  min-height: 100%; }
+
+.resize {
   width: 100%;
-  table-layout: fixed;
-  margin-left: 17.05961%;
-  height: 20em; }
-  .ethos::after {
-    clear: both;
-    content: "";
-    display: table; }
+  position: absolute; }
 
-.ethos .colleges {
-  background-color: white;
-  height: 20em;
-  display: table-cell;
-  width: 16.66667%;
-  margin-left: 17.05961%;
-  padding: 2.35765%; }
-
-.ethos .years {
-  background-color: white;
-  height: 20em;
-  display: table-cell;
-  width: 16.66667%;
-  padding: 2.35765%; }
-
-.ethos .students {
-  background-color: white;
-  height: 20em;
-  display: table-cell;
-  width: 16.66667%;
-  padding: 2.35765%; }
-
-.ethos .aspen {
-  background-color: white;
-  height: 20em;
-  display: table-cell;
-  width: 16.66667%;
-  padding: 2.35765%; }
-
-.keyline-right {
-  border-right: 1px solid rgba(0, 0, 0, 0.1); }
+@media only screen and (max-width: 900px) {
+  .logo {
+    margin: 0 auto;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
