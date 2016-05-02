@@ -1,6 +1,7 @@
 $(document).ready(function(){
-
-
+	// $('#nav-icon3').click(function(){
+	// 	$(this).toggleClass('open');
+	// });
 //NAVBAR 
 	$(window).resize(function() {
 	  var more = document.getElementById("js-navigation-more");
@@ -20,11 +21,13 @@ $(document).ready(function(){
 	});
 
 	$(document).ready(function() {
-	  var menuToggle = $("#js-mobile-menu").unbind();
+	  var menuToggle = $("#nav-icon3").unbind();
 	  $("#js-navigation-menu").removeClass("show");
 
 	  menuToggle.on("click", function(e) {
 	    e.preventDefault();
+		$('#nav-icon3').toggleClass('open');
+
 	    $("#js-navigation-menu").slideToggle(function(){
 	      if($("#js-navigation-menu").is(":hidden")) {
 	        $("#js-navigation-menu").removeAttr("style");
@@ -32,6 +35,7 @@ $(document).ready(function(){
 	    });
 	  });
 	}); 
+
 
 
 });

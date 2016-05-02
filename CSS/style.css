@@ -85,7 +85,8 @@ header.navigation {
     width: 100%;
     z-index: 9999;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    border-top: 1px solid #D9E5EB; }
     @media screen and (min-width: 900px) {
       header.navigation ul li.nav-link {
         background: transparent;
@@ -249,11 +250,30 @@ li.nav-link.jc-li-border {
   font-family: sailec;
   line-height: 100%; }
 
-span {
-  border: 2px solid #5b5aec;
-  padding: 12px;
+li.nav-link.jc-li-border span {
+  border: 1px solid #5b5aec;
+  padding: 8px 12px;
   border-radius: 20px;
   color: #5b5aec; }
+
+.overview ul {
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+  z-index: 9999;
+  font-size: 12px; }
+
+.overview li {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  z-index: 9999;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .main {
   height: 100%;
@@ -277,7 +297,8 @@ span {
     margin-right: 0; }
 
 .sub-header {
-  line-height: 110%;
+  max-width: 80%;
+  line-height: 220%;
   color: white; }
 
 #bg {
@@ -293,7 +314,11 @@ span {
   height: 20em;
   background-color: grey; }
 
-.ethos {
+.sub-nav {
+  height: 5em;
+  text-align: center; }
+
+.ethos-stats {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -302,12 +327,12 @@ span {
   table-layout: fixed;
   margin-left: 17.05961%;
   height: 20em; }
-  .ethos::after {
+  .ethos-stats::after {
     clear: both;
     content: "";
     display: table; }
 
-.ethos .colleges {
+.colleges {
   background-color: white;
   height: 20em;
   display: table-cell;
@@ -315,21 +340,21 @@ span {
   margin-left: 17.05961%;
   padding: 2.35765%; }
 
-.ethos .years {
+.years {
   background-color: white;
   height: 20em;
   display: table-cell;
   width: 16.66667%;
   padding: 2.35765%; }
 
-.ethos .students {
+.students {
   background-color: white;
   height: 20em;
   display: table-cell;
   width: 16.66667%;
   padding: 2.35765%; }
 
-.ethos .aspen {
+.aspen {
   background-color: white;
   height: 20em;
   display: table-cell;
@@ -343,5 +368,69 @@ span {
   .logo {
     margin: 0 auto;
     text-align: center; } }
+#nav-icon3 {
+  width: 15px;
+  height: 25px;
+  position: relative;
+  margin: 20px auto auto auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#nav-icon3 span {
+  display: inline-block;
+  position: absolute;
+  height: 5px;
+  width: 40%;
+  background: black;
+  border-radius: 18px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
+
+/* Icon 3 */
+#nav-icon3 span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 9px; }
+
+#nav-icon3 span:nth-child(4) {
+  top: 18px; }
+
+#nav-icon3.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#nav-icon3.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%; }
 
 /*# sourceMappingURL=style.css.map */
