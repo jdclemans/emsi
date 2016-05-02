@@ -4,16 +4,6 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-* {
-  background-color: white; }
-
-html {
-  background: url(../images/Home-Hero-Image.jpg) no-repeat top left fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
 body {
   min-height: 100%; }
 
@@ -45,7 +35,7 @@ header.navigation {
       max-height: 60px;
       padding: 0.8em 0; }
   header.navigation .navigation-menu-button {
-    color: #074d77;
+    color: black;
     display: block;
     float: right;
     line-height: 60px;
@@ -57,7 +47,7 @@ header.navigation {
       header.navigation .navigation-menu-button {
         display: none; } }
     header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
-      color: black; }
+      color: #2E3D49; }
   header.navigation nav {
     float: none;
     min-height: 60px;
@@ -91,9 +81,8 @@ header.navigation {
     display: block;
     line-height: 60px;
     overflow: hidden;
-    padding-right: 4.7em;
-    text-align: right;
-    width: 60%;
+    text-align: center;
+    width: 100%;
     z-index: 9999;
     text-transform: uppercase;
     letter-spacing: 1px; }
@@ -104,21 +93,22 @@ header.navigation {
         line-height: 60px;
         text-decoration: none;
         width: auto;
-        overflow: hidden; } }
+        overflow: hidden;
+        padding-right: 4.7em; } }
     header.navigation ul li.nav-link a {
-      color: #074d77;
+      color: black;
       display: inline-block;
       text-decoration: none; }
       @media screen and (min-width: 900px) {
         header.navigation ul li.nav-link a {
           padding-right: 0em; } }
       header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
-        color: black; }
+        color: #2E3D49; }
   header.navigation .active-nav-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }
   header.navigation li.more.nav-link {
-    padding-right: 3.5em; }
+    padding-right: 0; }
     @media screen and (min-width: 900px) {
       header.navigation li.more.nav-link {
         padding-right: 4.7em; } }
@@ -126,7 +116,7 @@ header.navigation {
       padding-top: 1em; }
   header.navigation li.more {
     overflow: visible;
-    padding-right: 0; }
+    padding-right: 5em; }
     header.navigation li.more > a {
       position: relative; }
       header.navigation li.more > a::after {
@@ -175,8 +165,9 @@ header.navigation {
       header.navigation ul.submenu li a {
         background-color: #f7f7f7;
         display: inline-block;
-        text-align: right;
-        width: 100%; }
+        text-align: left;
+        width: 100%;
+        padding-left: 46%; }
         @media screen and (min-width: 900px) {
           header.navigation ul.submenu li a {
             background-color: white;
@@ -204,7 +195,7 @@ header.navigation {
         border: 1px solid #f2f2f2;
         border-radius: 6px;
         box-sizing: border-box;
-        color: #074d77;
+        color: black;
         font-size: 0.9em;
         font-style: italic;
         margin: 0;
@@ -238,29 +229,115 @@ header.navigation {
 
 .jc-spacer {
   width: 100%;
-  height: 1.2em; }
+  height: 1.2em;
+  background-color: white; }
 
 .jc-nav {
   padding-right: 3.5em; }
 
 li.nav-link.jc-li-border {
-  color: #5b5aec;
+  color: #5b5aec; }
+
+.header h1 {
+  color: white;
+  font-family: sailec;
+  text-transform: uppercase;
+  font-size: 28px; }
+
+.subheader h2 {
+  color: white;
+  font-family: sailec;
+  line-height: 100%; }
+
+span {
   border: 2px solid #5b5aec;
   padding: 12px;
-  box-sizing: border-box;
-  /* add this */
-  -moz-box-sizing: border-box;
-  /* Firefox */
-  -webkit-box-sizing: border-box;
-  /* Older Webkit browsers */ }
+  border-radius: 20px;
+  color: #5b5aec; }
 
-.wrapper {
-  margin: 0 auto;
-  min-height: 100%; }
+.main {
+  height: 100%;
+  position: relative;
+  margin-top: 20em; }
 
-.resize {
+.header {
+  height: 20em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-left: 51.17883%;
+  position: absolute;
+  top: 65%;
+  height: 100px;
+  margin-top: -50px;
+  /* account for padding and border if not using box-sizing: border-box; */
+  padding-left: 5em; }
+  .header:last-child {
+    margin-right: 0; }
+
+.sub-header {
+  line-height: 110%;
+  color: white; }
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+.hero {
+  height: 20em;
+  background-color: grey; }
+
+.ethos {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
   width: 100%;
-  position: absolute; }
+  table-layout: fixed;
+  margin-left: 17.05961%;
+  height: 20em; }
+  .ethos::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.ethos .colleges {
+  background-color: white;
+  height: 20em;
+  display: table-cell;
+  width: 16.66667%;
+  margin-left: 17.05961%;
+  padding: 2.35765%; }
+
+.ethos .years {
+  background-color: white;
+  height: 20em;
+  display: table-cell;
+  width: 16.66667%;
+  padding: 2.35765%; }
+
+.ethos .students {
+  background-color: white;
+  height: 20em;
+  display: table-cell;
+  width: 16.66667%;
+  padding: 2.35765%; }
+
+.ethos .aspen {
+  background-color: white;
+  height: 20em;
+  display: table-cell;
+  width: 16.66667%;
+  padding: 2.35765%; }
+
+.keyline-right {
+  border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
 @media only screen and (max-width: 900px) {
   .logo {
