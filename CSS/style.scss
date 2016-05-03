@@ -431,7 +431,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 
@@ -446,6 +446,25 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+button {
+  border: 1px solid #5b5aec;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: #5b5aec;
+  background-color: white;
+}
+
+.keyline {
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+}
+
+.grey {
+  background-color: #f2f2f2;
+  width: 100%;
+  position: relative;
+}
+
 
 .jc-spacer {
   width: 100%;
@@ -484,7 +503,7 @@ li.nav-link.jc-li-border span {
 }
 
 .overview {
-  padding: 1em 10%;
+  padding: 2em 10%;
   text-align: center; 
   background-color: white;
 }
@@ -528,23 +547,6 @@ li.nav-link.jc-li-border span {
   z-index: -1
 }
 
-.text {
-  padding: 2em 20%;
-  text-align: center;
-}
-
-
-// .wrapper {
-//   // width: 100%;
-//   margin: 0 auto;
-//   min-height: 100%;
-// }
-
-// .resize {
-//   width: 100%;
-//   position: absolute;
-// }
-
 // Hero Section
 
 .hero {
@@ -572,7 +574,6 @@ li.nav-link.jc-li-border span {
   // height: 25em;
   background-color: #f2f2f2;
   text-align: center;
-  padding: 3em 0;
 }
 
 .ethos h3 {
@@ -581,71 +582,60 @@ li.nav-link.jc-li-border span {
 
 .ethos-header {
   text-align: center;
-  padding: 2em;
+  padding: 3em 0 2em 0;
 }
 
-.ethos-stats {
+.stats-block {
   @include outer-container;
   // @include row(table);
   // @include shift(2);
   width: 100%;
   max-width: 60%;
 
-
     @include media(910px) {
-
     }
-
-
 }
 
-.ethos-stats h1 {
+.stats-block h1 {
   color: #41D592;
 }
 
-.ethos-stats h6 {
+.stats-block h6 {
   text-transform: uppercase;
 }
 
-.ethos-stats p {
-  // padding: 0 6em;
+.stats-block p {
+  padding-top: 2em;
 }
 
-.colleges {
+.stats-box {
 
   @include fill-parent();
   // @include span-columns(2);
   // @include shift(2);
   // @include pad();
+  padding: 3em 0;
+}
+.stats-box p {
+  line-height: 130%;
 }
 
-.years {
-  @include fill-parent();
+//Generic Paragraph
 
-  // @include span-columns(2);
-  // @include pad();
-
+.text {
+  padding: 2em 0;
+  text-align: center;
+  @include shift(1);
+  @include span-columns(10);
 }
 
-.students {
-  @include fill-parent();
 
-  // @include span-columns(2);
-  // @include pad();
-
+//Sub Page Tiles
+.sub-page {
+ @include shift(1);
+ @include span-columns(10);
 }
 
-.aspen {
-  @include fill-parent();
-
-  // @include span-columns(2);
-  // @include pad();
-
-}
-
-.keyline-right {
-    border-right: 1px solid rgba(0,0,0,0.10);
-}
 
 
 //Nav Responsive
@@ -776,6 +766,11 @@ a {
   background-color: #fff;
   width: 100%;
   z-index: 9999;
+  display: none;
+
+  @media only screen and (min-width: 910px) {
+    display: inline-block;
+  }
 
 }
 
