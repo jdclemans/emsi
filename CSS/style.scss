@@ -109,9 +109,9 @@ header.navigation {
     min-height: $navigation-height;
     z-index: 9999999;
     -webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
--ms-box-sizing: border-box;
-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 
     @include media ($horizontal-bar-mode) {
       float: right;
@@ -153,12 +153,7 @@ box-sizing: border-box;
     z-index: 9999;
     text-transform: uppercase;
     letter-spacing: 1px;
-        border-top: 1px solid #B5C2CC;
-
-
- .border {
-  }
-
+    border-top: 1px solid #B5C2CC;
 
     @include media ($horizontal-bar-mode) {
       background: transparent;
@@ -197,7 +192,7 @@ box-sizing: border-box;
 
   li.more.nav-link {
     padding-right: 0;
-;
+
 
     @include media($horizontal-bar-mode) {
       padding-right: 4.7em;
@@ -492,6 +487,11 @@ li.nav-link.jc-li-border span {
   z-index: -1
 }
 
+.text {
+  padding: 2em 20%;
+  text-align: center;
+}
+
 
 // .wrapper {
 //   // width: 100%;
@@ -505,22 +505,24 @@ li.nav-link.jc-li-border span {
 // }
 
 // Hero Section
+
 .hero {
   height: 20em;
   background-color: grey;
-}
-
-.sub-nav {
-  height: 5em;
-  text-align: center;
 }
 
 // Ethos Section
 
 .ethos {
   width: 100%;
-  height: 20em;
-  background-color: #ebf2f2;
+  // height: 25em;
+  background-color: #E8E8EE;
+  text-align: center;
+  padding: 3em 0;
+}
+
+.ethos h3 {
+  text-transform: uppercase;
 }
 
 .ethos-header {
@@ -530,32 +532,56 @@ li.nav-link.jc-li-border span {
 
 .ethos-stats {
   @include outer-container;
-  @include row(table);
-  @include shift(2);
-  height: 60%;  
+  // @include row(table);
+  // @include shift(2);
+  width: 100%;
+  max-width: 60%;
+
+  
+    // @include media($horizontal-bar-mode) {
+
+    // }
+
+
+}
+
+.ethos-stats h1 {
+  color: #41D592;
+}
+
+.ethos-stats p {
+  // padding: 0 6em;
 }
 
 .colleges {
-  @include span-columns(2);
-  @include shift(2);
-  @include pad();
+
+  @include fill-parent();
+  // @include span-columns(2);
+  // @include shift(2);
+  // @include pad();
 }
 
 .years {
-  @include span-columns(2);
-  @include pad();
+  @include fill-parent();
+
+  // @include span-columns(2);
+  // @include pad();
 
 }
 
 .students {
-  @include span-columns(2);
-  @include pad();
+  @include fill-parent();
+
+  // @include span-columns(2);
+  // @include pad();
 
 }
 
 .aspen {
-  @include span-columns(2);
-  @include pad();
+  @include fill-parent();
+
+  // @include span-columns(2);
+  // @include pad();
 
 }
 
@@ -706,7 +732,7 @@ hr {
 .top-navigation .links {
     font-family: 'Roboto', sans-serif;
     color: #838994;
-    font-size: 16px;
+    font-size: 13px;
     -webkit-font-smoothing: antialiased;
     text-transform: uppercase;
 
