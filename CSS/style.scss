@@ -12,7 +12,6 @@ html {
   // -moz-background-size: cover;
   // -o-background-size: cover;
   // background-size: cover;
-
 }
 
 body {
@@ -36,7 +35,7 @@ header.navigation {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $dark-gray: #333 !default;
-  $large-screen: 1200px !default;
+  $large-screen: 910px !default;
   $navigation-padding: 1em;
   $navigation-background: white;
   $navigation-color: black;
@@ -73,6 +72,7 @@ header.navigation {
     max-height: $navigation-height;
     padding-left: 5em;
     padding-right: 2em;
+    padding-bottom: 4em;
 
     img {
       max-height: $navigation-height;
@@ -153,7 +153,7 @@ box-sizing: border-box;
     z-index: 9999;
     text-transform: uppercase;
     letter-spacing: 1px;
-        border-top: 1px solid #D9E5EB;
+        border-top: 1px solid #B5C2CC;
 
 
  .border {
@@ -404,8 +404,14 @@ box-sizing: border-box;
 }
 
 //-------------------
+//-------------------
 //JC Styles  
 //-------------------
+//-------------------
+
+ul {
+      -webkit-padding-start: 0;
+}
 
 .jc-spacer {
   width: 100%;
@@ -446,25 +452,9 @@ li.nav-link.jc-li-border span {
   color: #5b5aec;
 }
 
-.overview ul {
-  clear: both;
-  display: none;
-  margin: 0 auto;
-  overflow: visible;
-  padding: 0;
-  width: 100%;
-  z-index: 9999;
-  font-size: 12px;
-}
-
-.overview li {
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  z-index: 9999;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.overview {
+  padding: 3em 20%;
+  text-align: center; 
 }
 
 .main {
@@ -526,40 +516,44 @@ li.nav-link.jc-li-border span {
 }
 
 // Ethos Section
+
+.ethos {
+  width: 100%;
+  height: 20em;
+  background-color: #ebf2f2;
+}
+
+.ethos-header {
+  text-align: center;
+  padding: 2em;
+}
+
 .ethos-stats {
   @include outer-container;
   @include row(table);
   @include shift(2);
-  height: 20em;  
+  height: 60%;  
 }
 
 .colleges {
-  background-color: white;
-  height: 20em;
   @include span-columns(2);
   @include shift(2);
   @include pad();
 }
 
 .years {
-  background-color: white;
-  height: 20em;
   @include span-columns(2);
   @include pad();
 
 }
 
 .students {
-  background-color: white;
-  height: 20em;
   @include span-columns(2);
   @include pad();
 
 }
 
 .aspen {
-  background-color: white;
-  height: 20em;
   @include span-columns(2);
   @include pad();
 
@@ -580,9 +574,9 @@ li.nav-link.jc-li-border span {
 }
 }
 
-
+//--------------------
 // Dope Hamburger Menu
-
+//--------------------
 
 
 #nav-icon3 {
@@ -619,8 +613,6 @@ li.nav-link.jc-li-border span {
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-
-/* Icon 3 */
 
 #nav-icon3 span:nth-child(1) {
   top: 0px;
@@ -659,6 +651,89 @@ li.nav-link.jc-li-border span {
   width: 0%;
   left: 50%;
 }
+
+//-------------
+//Sub-nav 
+//-------------
+
+
+.content.links ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: white;
+  padding-right: 2em;
+}
+
+.content.links li > a {
+  display: inline;
+  width: 2em;
+}
+
+.content.links li {
+  display: inline-block;
+  box-sizing: border-box;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  color: #838994;
+}
+
+hr {
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.active {
+  color: black;
+  font-weight: 500;
+}
+
+.top-navigation {
+  background-color: #fff;
+  width: 100%;
+  z-index: 9999;
+
+}
+
+.top-navigation .links {
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+
+}
+
+.top-navigation .links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+.top-navigation .content {
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+// End Subnav
+
+
 
 
 
