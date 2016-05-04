@@ -247,7 +247,8 @@ h2 {
   font-size: 32px; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  padding: 1em 0; }
 
 h6 {
   font-size: 17px; }
@@ -266,11 +267,44 @@ hr {
   margin-bottom: 1rem; }
 
 button {
-  border: 1px solid #5b5aec;
+  border: 2px solid #5b5aec;
   padding: 8px 12px;
   border-radius: 20px;
   color: #5b5aec;
-  background-color: white; }
+  background-color: white;
+  text-transform: uppercase; }
+
+footer {
+  margin-left: 8.5298%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  padding: 3em 0;
+  text-align: center; }
+  footer:last-child {
+    margin-right: 0; }
+
+footer img {
+  max-width: 60%; }
+
+footer .icons li {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  color: #838994;
+  padding: 0.625rem 0;
+  margin: 1.25rem 2rem; }
+
+footer .icons {
+  padding-top: 1em; }
+
+.center {
+  text-align: center; }
+
+.grey-button button {
+  background-color: #f2f2f2; }
 
 .keyline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -278,7 +312,10 @@ button {
 .grey {
   background-color: #f2f2f2;
   width: 100%;
-  position: relative; }
+  overflow: hidden; }
+
+.container p {
+  line-height: 150%; }
 
 .jc-spacer {
   width: 100%;
@@ -418,14 +455,49 @@ li.nav-link.jc-li-border span {
   .text:last-child {
     margin-right: 0; }
 
+.text h2 {
+  padding-bottom: 1em; }
+
 .sub-page {
   margin-left: 8.5298%;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%; }
+  width: 82.94039%;
+  padding: 2em 0; }
   .sub-page:last-child {
     margin-right: 0; }
+
+.sub-page h2 {
+  padding: 0 0 1em 0; }
+
+.sub-page p {
+  padding: 0 0 1em 0; }
+
+.sub-page button {
+  margin: 1em 0; }
+
+.example-block {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .example-block::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.example-text {
+  margin-left: 8.5298%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  padding-bottom: 4em; }
+  .example-text:last-child {
+    margin-right: 0; }
+
+.example img {
+  padding: 2em 0; }
 
 @media only screen and (max-width: 900px) {
   .logo {

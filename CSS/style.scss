@@ -423,6 +423,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  padding: 1em 0;
 }
 
 h6 {
@@ -448,11 +449,45 @@ hr {
 }
 
 button {
-  border: 1px solid #5b5aec;
+  border: 2px solid #5b5aec;
   padding: 8px 12px;
   border-radius: 20px;
   color: #5b5aec;
   background-color: white;
+  text-transform: uppercase;
+}
+
+footer {
+  @include shift(1);
+  @include span-columns(10);
+  padding: 3em 0;
+  text-align: center; 
+}
+
+footer img {
+  max-width: 60%;
+}
+
+footer .icons li {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  color: #838994;
+  padding: 0.625rem 0;
+  margin: 1.25rem 2rem;
+}
+
+footer .icons {
+  padding-top: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.grey-button button {
+  background-color: #f2f2f2;
 }
 
 .keyline {
@@ -462,9 +497,12 @@ button {
 .grey {
   background-color: #f2f2f2;
   width: 100%;
-  position: relative;
+  overflow: hidden;
 }
 
+.container p {
+  line-height: 150%;
+}
 
 .jc-spacer {
   width: 100%;
@@ -629,11 +667,41 @@ li.nav-link.jc-li-border span {
   @include span-columns(10);
 }
 
+.text h2 {
+  padding-bottom: 1em;
+}
+
 
 //Sub Page Tiles
 .sub-page {
  @include shift(1);
  @include span-columns(10);
+ padding: 2em 0;
+}
+
+.sub-page h2 {
+  padding:  0 0 1em 0;
+}
+
+.sub-page p {
+  padding:  0 0 1em 0;
+}
+
+.sub-page button {
+  margin: 1em 0;
+}
+
+.example-block {
+  @include outer-container;
+}
+
+.example-text {
+  @include shift(1);
+  @include span-columns(10);
+  padding-bottom: 4em;
+}
+.example img {
+  padding: 2em 0;
 }
 
 
