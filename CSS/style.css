@@ -1,20 +1,86 @@
+@import url("//hello.myfonts.net/count/310cb5");
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310A8D_0_0.eot");
+  src: url("webfonts/310A8D_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310A8D_0_0.woff2") format("woff2"), url("webfonts/310A8D_0_0.woff") format("woff"), url("webfonts/310A8D_0_0.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310A8D_1_0.eot");
+  src: url("webfonts/310A8D_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310A8D_1_0.woff2") format("woff2"), url("webfonts/310A8D_1_0.woff") format("woff"), url("webfonts/310A8D_1_0.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_8_0.eot");
+  src: url("webfonts/310CB5_8_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_8_0.woff2") format("woff2"), url("webfonts/310CB5_8_0.woff") format("woff"), url("webfonts/310CB5_8_0.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_2_0.eot");
+  src: url("webfonts/310CB5_2_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_2_0.woff2") format("woff2"), url("webfonts/310CB5_2_0.woff") format("woff"), url("webfonts/310CB5_2_0.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_3_0.eot");
+  src: url("webfonts/310CB5_3_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_3_0.woff2") format("woff2"), url("webfonts/310CB5_3_0.woff") format("woff"), url("webfonts/310CB5_3_0.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_6_0.eot");
+  src: url("webfonts/310CB5_6_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_6_0.woff2") format("woff2"), url("webfonts/310CB5_6_0.woff") format("woff"), url("webfonts/310CB5_6_0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_7_0.eot");
+  src: url("webfonts/310CB5_7_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_7_0.woff2") format("woff2"), url("webfonts/310CB5_7_0.woff") format("woff"), url("webfonts/310CB5_7_0.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_4_0.eot");
+  src: url("webfonts/310CB5_4_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_4_0.woff2") format("woff2"), url("webfonts/310CB5_4_0.woff") format("woff"), url("webfonts/310CB5_4_0.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_5_0.eot");
+  src: url("webfonts/310CB5_5_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_5_0.woff2") format("woff2"), url("webfonts/310CB5_5_0.woff") format("woff"), url("webfonts/310CB5_5_0.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_0_0.eot");
+  src: url("webfonts/310CB5_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_0_0.woff2") format("woff2"), url("webfonts/310CB5_0_0.woff") format("woff"), url("webfonts/310CB5_0_0.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Sailec';
+  src: url("webfonts/310CB5_1_0.eot");
+  src: url("webfonts/310CB5_1_0.eot?#iefix") format("embedded-opentype"), url("webfonts/310CB5_1_0.woff2") format("woff2"), url("webfonts/310CB5_1_0.woff") format("woff"), url("webfonts/310CB5_1_0.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Sailec; }
+
+html {
+  font-size: 10px; }
 
 body {
-  min-height: 100%; }
-
-@font-face {
-  font-family: 'sailec';
-  src: url("fonts/sailec.otf") format(".otf"); }
-body {
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -22,7 +88,8 @@ header.navigation {
   background-color: white;
   min-height: 60px;
   width: 100%;
-  z-index: 999; }
+  z-index: 999;
+  padding: 2.5rem 0; }
   header.navigation .navigation-wrapper {
     position: relative;
     z-index: 9999; }
@@ -158,11 +225,7 @@ header.navigation {
         top: 0; } }
     header.navigation ul.submenu li {
       display: block;
-      padding-right: 0;
-      -webkit-transition: max-height 500ms ease;
-      -moz-transition: max-height 500ms ease;
-      -o-transition: max-height 500ms ease;
-      transition: max-height 500ms ease; }
+      padding-right: 0; }
       @media screen and (min-width: 910px) {
         header.navigation ul.submenu li {
           line-height: 46.15385px; }
@@ -239,22 +302,32 @@ header.navigation {
           display: block; } }
 
 h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
+  font-weight: 300;
   color: white;
   margin: 0; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding: 0 0 0rem 0; }
 
 h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 1rem 0 1rem 0; }
+
+h5 {
+  font-size: 1.7rem;
+  font-weight: 800;
   padding: 1em 0; }
 
 h6 {
-  font-size: 17px; }
+  font-size: 1.2rem;
+  font-weight: 500; }
 
 p {
-  font-size: 18px; }
+  font-size: 1.8rem; }
 
 ul {
   -webkit-padding-start: 0; }
@@ -268,11 +341,13 @@ hr {
 
 button {
   border: 2px solid #5b5aec;
-  padding: 8px 12px;
+  padding: 12px 12px 8px 12px;
   border-radius: 20px;
   color: #5b5aec;
   background-color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500; }
 
 footer {
   margin-left: 8.5298%;
@@ -286,7 +361,7 @@ footer {
     margin-right: 0; }
 
 footer img {
-  max-width: 60%; }
+  max-width: 245px; }
 
 footer .icons li {
   width: 2.5rem;
@@ -298,7 +373,19 @@ footer .icons li {
   margin: 1.25rem 1.5rem; }
 
 footer .icons {
-  padding-top: 1em; }
+  padding-top: 0; }
+
+.thin {
+  font-family: Sailec-Thin; }
+
+.light {
+  font-family: Sailec-Light; }
+
+.medium {
+  font-family: Sailec-Medium; }
+
+.bold {
+  font-family: Sailec-Bold; }
 
 .center {
   text-align: center; }
@@ -317,11 +404,6 @@ footer .icons {
 .container p {
   line-height: 150%; }
 
-.jc-spacer {
-  width: 100%;
-  height: 1.2em;
-  background-color: white; }
-
 .jc-nav {
   padding-right: 3.5em; }
 
@@ -330,17 +412,35 @@ li.nav-link.jc-li-border {
 
 .header h1 {
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 38px;
+  padding-bottom: .5em; }
 
 .subheader h2 {
   color: white;
   line-height: 100%; }
 
-li.nav-link.jc-li-border span {
+li.nav-link span {
   border: 1px solid #5b5aec;
-  padding: 8px 12px;
+  padding: 10px 12px 8px 12px;
   border-radius: 20px;
-  color: #5b5aec; }
+  color: #5b5aec;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+li.nav-link span:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+li.nav-link span:hover,
+li.nav-link span:active {
+  color: #fff;
+  background: #5b5aec; }
 
 .overview {
   padding: 2em 10%;
@@ -372,8 +472,8 @@ li.nav-link.jc-li-border span {
     margin-right: 0; }
 
 .sub-header {
-  max-width: 80%;
-  line-height: 220%;
+  max-width: 95%;
+  line-height: 300%;
   color: white; }
 
 #bg {
@@ -387,9 +487,10 @@ li.nav-link.jc-li-border span {
 
 .hero {
   background-color: #41D592;
-  height: 20em; }
+  height: 41rem;
+  padding: 4rem 0; }
 
-.hero h6 {
+.hero h5 {
   text-transform: uppercase;
   color: white; }
 
@@ -429,17 +530,18 @@ li.nav-link.jc-li-border span {
     display: table; }
 
 .stats-block h1 {
-  color: #41D592; }
+  color: #41D592;
+  font-weight: 800; }
 
 .stats-block h6 {
   text-transform: uppercase; }
 
 .stats-block p {
-  padding-top: 2em; }
+  padding-top: 1em; }
 
 .stats-box {
   width: 100%;
-  padding: 3em 0; }
+  padding: 2em 0; }
 
 .stats-box p {
   line-height: 130%; }
@@ -456,7 +558,7 @@ li.nav-link.jc-li-border span {
     margin-right: 0; }
 
 .text h2 {
-  padding-bottom: 1em; }
+  padding-bottom: 0em; }
 
 .sub-page {
   margin-left: 8.5298%;
@@ -504,10 +606,10 @@ li.nav-link.jc-li-border span {
     margin: 0 auto;
     text-align: center; } }
 #nav-icon3 {
-  width: 15px;
-  height: 25px;
+  width: 1.5rem;
+  height: 2.5rem;
   position: relative;
-  margin: 20px auto auto auto;
+  margin: 2rem 2rem auto auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -522,7 +624,7 @@ li.nav-link.jc-li-border span {
   display: inline-block;
   position: absolute;
   height: 5px;
-  width: 40%;
+  width: 70%;
   background: #B5C2CC;
   border-radius: 18px;
   opacity: 1;
@@ -601,7 +703,6 @@ a {
       display: inline-block; } }
 
 .sub-navigation .links {
-  font-family: 'Roboto', sans-serif;
   color: #838994;
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
@@ -623,5 +724,53 @@ a {
 .sub-navigation .content {
   padding: 1rem 3rem;
   text-align: center; }
+
+.btn {
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.btn:hover,
+.btn:active {
+  color: #fff;
+  background: #5b5aec; }
+
+@media only screen and (min-width: 900px) {
+  .header h1 {
+    color: #000; }
+
+  .keyline {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none; }
+
+  .stats-block {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-left: 17.05961%;
+    max-width: none; }
+    .stats-block::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .stats-block .stats-box {
+      width: 100%;
+      display: table-cell;
+      width: 16.66667%;
+      margin-left: 17.05961%;
+      padding: 2.35765%;
+      max-width: none; } }
 
 /*# sourceMappingURL=style.css.map */

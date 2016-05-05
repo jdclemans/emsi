@@ -9,15 +9,15 @@ $(document).ready(function(){
 	  var moreLeftSideToPageLeftSide = $(more).offset().left;
 	  var moreLeftSideToPageRightSide = windowWidth - moreLeftSideToPageLeftSide;
 
-	  if (moreLeftSideToPageRightSide < 330) {
-	    $("#js-navigation-more .submenu .submenu").removeClass("fly-out-right");
-	    $("#js-navigation-more .submenu .submenu").addClass("fly-out-left");
-	  }
+	  // if (moreLeftSideToPageRightSide < 330) {
+	  //   $("#js-navigation-more .submenu .submenu").removeClass("fly-out-right");
+	  //   $("#js-navigation-more .submenu .submenu").addClass("fly-out-left");
+	  // }
 
-	  if (moreLeftSideToPageRightSide > 330) {
-	    $("#js-navigation-more .submenu .submenu").removeClass("fly-out-left");
-	    $("#js-navigation-more .submenu .submenu").addClass("fly-out-right");
-	  }
+	  // if (moreLeftSideToPageRightSide > 330) {
+	  //   $("#js-navigation-more .submenu .submenu").removeClass("fly-out-left");
+	  //   $("#js-navigation-more .submenu .submenu").addClass("fly-out-right");
+	  // }
 	});
 
 	$(document).ready(function() {
