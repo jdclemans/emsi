@@ -157,8 +157,7 @@ header.navigation {
     width: 100%;
     z-index: 9999;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    border-top: 1px solid #B5C2CC; }
+    letter-spacing: 1px; }
     @media screen and (min-width: 910px) {
       header.navigation ul li.nav-link {
         background: transparent;
@@ -319,8 +318,8 @@ h3 {
 
 h5 {
   font-size: 1.7rem;
-  font-weight: 800;
-  padding: 1em 0; }
+  font-weight: 400;
+  text-transform: uppercase; }
 
 h6 {
   font-size: 1.2rem;
@@ -492,7 +491,9 @@ li.nav-link span:active {
 
 .hero h5 {
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  padding: 1em 0;
+  font-weight: 800; }
 
 .hero-header {
   margin-left: 8.5298%;
